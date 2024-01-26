@@ -1,0 +1,6 @@
+namespace: wordpress
+wordpressMinReplicas: 1
+wordpressMaxReplicas: 3
+# wordpressNodePort: 33333
+mysqlRootPassword: jokeofapassword
+
