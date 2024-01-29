@@ -2,7 +2,7 @@
 
 ## Description
 
-This is project to deploy AWS EKS cluster with metric server (for autoscaling) and dynamic storage provisioning.
+This is a project to deploy AWS EKS cluster with metric server (for autoscaling) and dynamic storage provisioning.
 It also deploys simple Helm chart for Wordpress with mysql backend db.
 
 ## Installation
@@ -44,6 +44,7 @@ You can make changes to chart and package it using command `helm package .` befo
 - Create helm template files and package application
 - Install metrcis server manually, configure autoscaler and resource limits for wordpress deployment
 - Add metric server installation to Terraform with predownloaded package
+- Switch wordpress service from nodePort to Loadbalancer
 - Add installation of EBS CSI driver to Terraform
 - Change storage for wordpress deployment to dynamic provisioning
 - Change storage for mysql statefulset to dynamic provisioning
