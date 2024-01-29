@@ -13,7 +13,7 @@ module "eks" {
   scaling_min_size        = 1
   instance_types          = ["t3.small"]
   key_pair                = "sboxing-eks"
-  deploy_wordpress        = false
+  deploy_wordpress        = true
   wordpress_namespace     = "wordpress"
 
 }
