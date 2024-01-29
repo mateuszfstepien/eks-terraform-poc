@@ -17,7 +17,7 @@ cd eks-terraform-poc/terraform
 ```
 
 Adjust parameters in main.tf file. At the minimum provid menioned earlier `key_pair` name, `vpc_cidr` and based on that `public_cidrs`. If you want to skip key pair, remove `remote_access` block from `aws_eks_node_group`resource in eks module. But this will remove the only option to log into worker nodes.
-By default also Helm chart for wordpress will be deployed, which can be changed by setting deploy_wordpress to false.
+By default also Helm chart for wordpress will be deployed, which can be changed by setting `deploy_wordpress` to false.
 Proceed with deployment via terraform using local state file.
 
 ```bash
@@ -61,3 +61,4 @@ You can make changes to chart and package it using command `helm package .` befo
 - Bug in aws_eks_identity_provider_config (newer version)
 - EBS CSI driver not having right permissions (still a mystery)
 - mysql not working with dynamic provisioning (lost+found)
+- last minute qota issues

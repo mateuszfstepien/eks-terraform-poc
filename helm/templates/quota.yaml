@@ -5,9 +5,9 @@ metadata:
   namespace: {{ .Release.Namespace }}
 spec:
   hard:
-    pods: "5"
-    requests.cpu: "1"
-    requests.memory: 1Gi
-    limits.cpu: "2"
-    limits.memory: 2Gi
-    services: "3"
+    pods: "6"
+    requests.cpu: "2"
+    requests.memory: "1Gi"
+    limits.cpu: "3"
+    limits.memory: "2Gi"
+    services: "4"
